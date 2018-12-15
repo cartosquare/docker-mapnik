@@ -15,6 +15,11 @@ RUN         set -x \
                     build-essential \
                     gcc \
                     imagemagick \
+                    fonts-hanazono \
+                    fonts-noto-cjk \
+                    fonts-noto-hinted \
+                    fonts-noto-unhinted \
+                    ttf-unifont \
                     libmapnik3.0 \
                     mapnik-utils \
                     \
@@ -34,6 +39,11 @@ RUN         set -x \
                     python3-lxml \
                     \
                     npm
+
+#
+# Install nik4
+#
+RUN pip3 install nik4
 
 #
 # Install carto
